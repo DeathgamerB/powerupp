@@ -717,7 +717,7 @@ void scan_gpus() {
   char vendorcheck[64];
   char vendorid[64];
 
-  if (access("/sys/class/drm/card0/device/device", F_OK) == -1) { num = 1; }
+  if (access("/sys/class/drm/card1/device/device", F_OK) == -1) { num = 1; }
 
   //scan for GPUs and add them to combobox
   do {
